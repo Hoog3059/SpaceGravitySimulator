@@ -1,0 +1,89 @@
+{
+    "Objects": [
+        {
+            "name": "Sun",
+            "location.x": 840.0,
+            "location.y": 525.0,
+            "width": 50.0,
+            "height": 50.0,
+            "mass": 0.1,
+            "is_static": true,
+            "velocity.x": 0.0,
+            "velocity.y": 0.0,
+            "use_orbital_velocity_to": "",
+            "orbit_is_clockwise": false,
+            "trace_path": false,
+            "max_nr_path": 0,
+            "gravity_influence_from": [],
+            "draw_all_vectors": {
+                "do": true,
+                "k_v": 5,
+                "k_g": 1000,
+                "g_vectors_from": [
+                    "Moon"
+                ]
+            },
+            "draw_physics_data": false
+        },
+        {
+            "name": "Planet",
+            "location.x": 100.0,
+            "location.y": 525.0,
+            "width": 10.0,
+            "height": 10.0,
+            "mass": 0.001,
+            "is_static": false,
+            "velocity.x": 0.0,
+            "velocity.y": 0.0,
+            "use_orbital_velocity_to": "Sun",
+            "orbit_is_clockwise": false,
+            "trace_path": true,
+            "max_nr_path": 500,
+            "gravity_influence_from": [
+                "Sun",
+                "Moon"
+            ],
+            "draw_all_vectors": {
+                "do": true,
+                "k_v": 5,
+                "k_g": 500,
+                "g_vectors_from": [
+                    "Sun",
+                    "Moon"
+                ]
+            },
+            "draw_physics_data": true
+        },
+        {
+            "name": "Moon",
+            "location.x": 30.0,
+            "location.y": 580.0,
+            "width": 5.0,
+            "height": 5.0,
+            "mass": 0.0000012,
+            "is_static": false,
+            "velocity.x": 1.5,
+            "velocity.y": 4.8,
+            "use_orbital_velocity_to": "",
+            "orbit_is_clockwise": false,
+            "trace_path": true,
+            "max_nr_path": 500,
+            "gravity_influence_from": [
+                "Planet",
+                "Sun"
+            ],
+            "draw_all_vectors": {
+                "do": true,
+                "k_v": 5,
+                "k_g": 500,
+                "g_vectors_from": [
+                    "Planet",
+                    "Sun"
+                ]
+            },
+            "draw_physics_data": true
+        }
+    ],
+    "G": 160000.0,
+    "FPS": 10
+}

@@ -1,0 +1,121 @@
+{
+    "Objects": [
+        {
+            "name": "Star",
+            "location.x": 1000.0,
+            "location.y": 1000.0,
+            "width": 10.0,
+            "height": 10.0,
+            "mass": 0.1,
+            "is_static": true,
+            "velocity.x": 0.0,
+            "velocity.y": 0.0,
+            "use_orbital_velocity_to": "",
+            "orbit_is_clockwise": false,
+            "trace_path": false,
+            "max_nr_path": 0,
+            "gravity_influence_from": [],
+            "draw_all_vectors": {
+                "do": false,
+                "k_v": 0,
+                "k_g": 0,
+                "g_vectors_from": []
+            },
+            "draw_physics_data": false
+        },
+        {
+            "name": "1",
+            "location.x": 1200.0,
+            "location.y": 1200.0,
+            "width": 10.0,
+            "height": 10.0,
+            "mass": 0.01,
+            "is_static": false,
+            "velocity.x": 0.0,
+            "velocity.y": 0.0,
+            "use_orbital_velocity_to": "Star",
+            "orbit_is_clockwise": false,
+            "trace_path": false,
+            "max_nr_path": 0,
+            "gravity_influence_from": ["Star"],
+            "draw_all_vectors": {
+                "do": false,
+                "k_v": 0,
+                "k_g": 0,
+                "g_vectors_from": []
+            },
+            "draw_physics_data": true
+        },
+        {
+            "name": "2",
+            "location.x": 800.0,
+            "location.y": 1200.0,
+            "width": 10.0,
+            "height": 10.0,
+            "mass": 0.01,
+            "is_static": false,
+            "velocity.x": 0.0,
+            "velocity.y": 0.0,
+            "use_orbital_velocity_to": "Star",
+            "orbit_is_clockwise": false,
+            "trace_path": false,
+            "max_nr_path": 0,
+            "gravity_influence_from": ["Star"],
+            "draw_all_vectors": {
+                "do": false,
+                "k_v": 0,
+                "k_g": 0,
+                "g_vectors_from": []
+            },
+            "draw_physics_data": true
+        },
+        {
+            "name": "3",
+            "location.x": 1200.0,
+            "location.y": 800.0,
+            "width": 10.0,
+            "height": 10.0,
+            "mass": 0.01,
+            "is_static": false,
+            "velocity.x": 0.0,
+            "velocity.y": 0.0,
+            "use_orbital_velocity_to": "Star",
+            "orbit_is_clockwise": false,
+            "trace_path": false,
+            "max_nr_path": 0,
+            "gravity_influence_from": ["Star"],
+            "draw_all_vectors": {
+                "do": false,
+                "k_v": 0,
+                "k_g": 0,
+                "g_vectors_from": []
+            },
+            "draw_physics_data": true
+        },
+        {
+            "name": "4",
+            "location.x": 800.0,
+            "location.y": 800.0,
+            "width": 10.0,
+            "height": 10.0,
+            "mass": 0.01,
+            "is_static": false,
+            "velocity.x": 0.0,
+            "velocity.y": 0.0,
+            "use_orbital_velocity_to": "Star",
+            "orbit_is_clockwise": false,
+            "trace_path": false,
+            "max_nr_path": 0,
+            "gravity_influence_from": ["Star"],
+            "draw_all_vectors": {
+                "do": false,
+                "k_v": 0,
+                "k_g": 0,
+                "g_vectors_from": []
+            },
+            "draw_physics_data": true
+        }
+    ],
+    "G": 160000.0,
+    "FPS": 20
+}

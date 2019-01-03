@@ -1,0 +1,93 @@
+{
+    "Objects": [
+        {
+            "name": "Star 1",
+            "location.x": 600.0,
+            "location.y": 650.0,
+            "width": 20.0,
+            "height": 20.0,
+            "mass": 0.1,
+            "is_static": false,
+            "velocity.x": 7.333,
+            "velocity.y": -7.333,
+            "use_orbital_velocity_to": "",
+            "orbit_is_clockwise": false,
+            "trace_path": true,
+            "max_nr_path": 500,
+            "gravity_influence_from": [
+                "Star 2",
+                "Planet"
+            ],
+            "draw_all_vectors": {
+                "do": true,
+                "k_v": 5,
+                "k_g": 100,
+                "g_vectors_from": [
+                    "Star 2",
+                    "Planet"
+                ]
+            },
+            "draw_physics_data": true
+        },
+        {
+            "name": "Star 2",
+            "location.x": 1140.0,
+            "location.y": 400.0,
+            "width": 20.0,
+            "height": 20.0,
+            "mass": 0.1,
+            "is_static": false,
+            "velocity.x": -7.333,
+            "velocity.y": 7.333,
+            "use_orbital_velocity_to": "",
+            "orbit_is_clockwise": false,
+            "trace_path": true,
+            "max_nr_path": 500,
+            "gravity_influence_from": [
+                "Star 1",
+                "Planet"
+            ],
+            "draw_all_vectors": {
+                "do": true,
+                "k_v": 5,
+                "k_g": 100,
+                "g_vectors_from": [
+                    "Star 1",
+                    "Planet"
+                ]
+            },
+            "draw_physics_data": true
+        },
+        {
+            "name": "Planet",
+            "location.x": 240.0,
+            "location.y": 525.0,
+            "width": 10.0,
+            "height": 10.0,
+            "mass": 0.0000000001,
+            "is_static": false,
+            "velocity.x": 0.0,
+            "velocity.y": 0.0,
+            "use_orbital_velocity_to": "Star 1",
+            "orbit_is_clockwise": false,
+            "trace_path": true,
+            "max_nr_path": 500,
+            "gravity_influence_from": [
+                "Star 1",
+                "Star 2"
+            ],
+            "draw_all_vectors": {
+                "do": true,
+                "k_v": 5,
+                "k_g": 100,
+                "g_vectors_from": [
+                    "Star 1",
+                    "Star 2"
+                ]
+            },
+            "draw_physics_data": true
+        }
+    ],
+    "G": 160000.0,
+    "FPS": 60
+}

@@ -1,0 +1,29 @@
+{
+    "Objects": [
+        {
+            "name": "Object",
+            "location.x": 0.0,
+            "location.y": 0.0,
+            "width": 0.0,
+            "height": 0.0,
+            "mass": 0,
+            "is_static": false,
+            "velocity.x": 0.0,
+            "velocity.y": 0.0,
+            "use_orbital_velocity_to": "",
+            "orbit_is_clockwise": false,
+            "trace_path": false,
+            "max_nr_path": 0,
+            "gravity_influence_from": [],
+            "draw_all_vectors": {
+                "do": false,
+                "k_v": 0,
+                "k_g": 0,
+                "g_vectors_from": []
+            },
+            "draw_physics_data": false
+        }
+    ],
+    "G": 160000.0,
+    "FPS": 60
+}
